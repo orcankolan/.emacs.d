@@ -495,7 +495,12 @@ Emacs client/library for Debug Adapter Protocol is a wire protocol for communica
   ;; use tooltips for mouse hover
   ;; if it is not enabled `dap-mode' will use the minibuffer.
   (tooltip-mode 1)
+  ;; Make sure that you have nodejs installed on your system
+  ;; Using Ubuntu
+  ;; curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
+  ;; sudo apt-get install -y nodejs
   (require 'dap-gdb-lldb)
+  ;; M-x dap-gdb-lldb-setup to download webfreak.debug to .emacs.d/.extension/vscode folder
 #+END_SRC
 * Magit 
 #+BEGIN_SRC emacs-lisp
