@@ -495,6 +495,7 @@ Emacs client/library for Debug Adapter Protocol is a wire protocol for communica
   ;; use tooltips for mouse hover
   ;; if it is not enabled `dap-mode' will use the minibuffer.
   (tooltip-mode 1)
+  (require 'dap-lldb)
 #+END_SRC
 * Magit 
 #+BEGIN_SRC emacs-lisp
