@@ -445,6 +445,7 @@ emacs.font: Hack-10
       :preface
       (defun my/cmake-ide-find-project ()
 	"Finds the directory of the project for cmake-ide."
+	(interactive)
 	(with-eval-after-load 'projectile
 	  (setq cmake-ide-project-dir (projectile-project-root))
 	  (setq cmake-ide-build-dir (concat cmake-ide-project-dir "build"))
@@ -457,7 +458,8 @@ emacs.font: Hack-10
 	    ))
 	(setq cmake-ide-compile-command 
 	      (concat "cd " cmake-ide-build-dir " && cmake .. && make"))
-
+	)
+  
 	(defun my-executable-run ()
 	  "Runs the executable under"
 	  (setq my-executable-file (string-trim (shell-command-to-string (concat "find " cmake-ide-build-dir " -maxdepth 1 -type f -executable"))))
@@ -468,7 +470,7 @@ emacs.font: Hack-10
 	  )
 
 	(cmake-ide-load-db)
-	)
+    
 
       (defun my/switch-to-compilation-window ()
 	"Switches to the *compilation* buffer after compilation."
