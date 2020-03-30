@@ -506,6 +506,8 @@ Emacs client/library for Debug Adapter Protocol is a wire protocol for communica
   ;; sudo apt-get install -y nodejs
   (require 'dap-gdb-lldb)
   ;; M-x dap-gdb-lldb-setup to download webfreak.debug to .emacs.d/.extension/vscode folder
+  ;; (add-hook 'dap-stopped-hook
+  ;; 	  (lambda (arg) (call-interactively #'dap-hydra)))
 #+END_SRC
 * Magit 
 #+BEGIN_SRC emacs-lisp
