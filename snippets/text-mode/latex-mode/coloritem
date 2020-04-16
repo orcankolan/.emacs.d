@@ -1,5 +1,5 @@
 # key : color
-# group: environments
+# group: Orcans
 # name : \begin{coloreitemize} ... \end{coloritemize}
 # --
 \begin{coloritemize}

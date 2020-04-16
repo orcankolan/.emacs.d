@@ -1,5 +1,5 @@
 # key : colorenum
-# group: environments
+# group: Orcans
 # name : \begin{colorenum} ... \end{colorenum}
 # --
 \begin{colorenum}
