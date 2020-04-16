@@ -1,0 +1,5 @@
+# key : mpb
+# group: Orcans
+# name : My ParBox
+# --
+\parbox[b][2cm][c]{${1:3cm}}{\centering ${2}}$0

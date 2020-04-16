@@ -1,0 +1,19 @@
+# key : df
+# group: Orcans
+# name : Insert double figure
+# --
+\begin{figure}[H]
+	\centering
+	\begin{minipage}[t]{0.4\textwidth}
+	\includegraphics[width=\textwidth]{${1:resim1}}\\\centering \color{fig-cap} 
+                \caption{}
+                \label{${2:label1}}
+	\end{minipage}
+	\hspace{12mm}
+	\begin{minipage}[t]{0.4\textwidth}
+		\includegraphics[width=\textwidth]{${3:resim2}}\\\centering \color{fig-cap} 
+                \caption{}
+                \label{${4:label2}}
+	\end{minipage}\\
+	\vspace{3mm}
+\end{figure} $0
