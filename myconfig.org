@@ -415,7 +415,7 @@ emacs.font: Hack-10
       :config
       (add-to-list 'company-backends 'company-c-headers)
       ;; Above line only add two include paths: /usr/include/ and /usr/local/include/
-      (add-to-list 'company-c-headers-path-system "/usr/include/c++/7.4.0/")
+      (add-to-list 'company-c-headers-path-system "/usr/include/c++/7.5.0/")
       )
 
     ;; (use-package company-quickhelp
@@ -1132,9 +1132,17 @@ Projectile provides easy project management and navigation. Some of Projectile's
 	   (insert "*/\n") 
 	   (insert "!.gitignore") 
 	 )
+
+	 (with-temp-file (format "~/dev/%s/.clangformat" project-name)
+	   (insert "Basedonstyle: LLVM\n") 
+	   (insert "IndentWidth: 4") 
+	   )
+
+	 (treemacs-do-add-project-to-workspace (format "~/dev/%s" project-name))
        )
      )
   #+END_SRC
+
 * Personal Keymap
   #+BEGIN_SRC emacs-lisp
     (define-key o-map (kbd "w") 'o/swap-windows)
