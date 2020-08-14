@@ -2,7 +2,7 @@
 * Built-in modes and variables
 ** Start serve for emacsclient 
    #+BEGIN_SRC emacs-lisp
-       (server-start) 
+     ;; (server-start) 
    #+END_SRC
 ** Startup message
    #+BEGIN_SRC emacs-lisp
