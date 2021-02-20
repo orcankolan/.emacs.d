@@ -61,7 +61,7 @@
  '(lsp-ui-sideline-show-symbol t t)
  '(package-selected-packages
    (quote
-    (wgrep define-word engine-mode dired-subtree eterm-256color xterm-color auto-yasnippet yasnippet-classic-snippets yasnippet-snippets yasnippet evil-smartparens smartparens beacon dumb-jump counsel-projectile cheatsheet evil-collection auctex pdf-tools doom-modeline all-the-icons spacemacs-theme doom-themes rainbow-delimiters ivy-xref dap-mode cmake-ide cmake-font-lock cmake-mode company-c-headers company-lsp ccls lsp-treemacs lsp-ui lsp-mode company treemacs-magit treemacs-icons-dired treemacs-projectile treemacs-evil treemacs flycheck counsel gnu-elpa-keyring-update ace-window org-bullets which-key try nlinum-relative diminish use-package)))
+    (wgrep define-word engine-mode dired-subtree eterm-256color xterm-color auto-yasnippet yasnippet-classic-snippets yasnippet evil-smartparens smartparens beacon dumb-jump counsel-projectile cheatsheet evil-collection auctex pdf-tools doom-modeline all-the-icons spacemacs-theme doom-themes rainbow-delimiters ivy-xref dap-mode cmake-ide cmake-font-lock cmake-mode company-c-headers company-lsp ccls lsp-treemacs lsp-ui lsp-mode company treemacs-magit treemacs-icons-dired treemacs-projectile treemacs-evil treemacs flycheck counsel gnu-elpa-keyring-update ace-window org-bullets which-key try nlinum-relative diminish use-package)))
  '(projectile-project-root-files-top-down-recurring
    (quote
     ("compile_commands.json" ".ccls" "compile_commands.json" ".ccls" ".svn" "CVS" "Makefile"))))
