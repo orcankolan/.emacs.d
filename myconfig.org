@@ -407,17 +407,17 @@ emacs.font: Hack-10
       (ccls-executable (executable-find "ccls"))
       (projectile-project-root-files-top-down-recurring
        (append '("compile_commands.json" ".ccls")
-               projectile-project-root-files-top-down-recurring))
+	       projectile-project-root-files-top-down-recurring))
       :config (push ".ccls-cache" projectile-globally-ignored-directories))
 
-    (use-package company-lsp
-      :after company
-      :ensure t
-      :config
-      (push 'company-lsp company-backends)
-      ;; Disable client-side caching and sorting
-      ;; (setq company-transformers nil company-lsp-async t company-lsp-cache-candidates nil)
-    )
+    ;; (use-package company-lsp
+    ;;   :after company
+    ;;   :ensure t
+    ;;   :config
+    ;;   (push 'company-lsp company-backends)
+    ;;   ;; Disable client-side caching and sorting
+    ;;   ;; (setq company-transformers nil company-lsp-async t company-lsp-cache-candidates nil)
+    ;; )
 
     (use-package company-c-headers
       :after company
